@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Automatiza.Windows": {
+      "commandName": "MsixPackage"
+    }
+  }
+}

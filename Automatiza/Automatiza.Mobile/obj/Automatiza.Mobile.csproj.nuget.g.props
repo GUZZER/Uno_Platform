@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\GustavoFerreiraBarro\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\GustavoFerreiraBarro\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)uno.winui.runtime.webassembly\4.6.19\buildTransitive\Uno.WinUI.Runtime.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.runtime.webassembly\4.6.19\buildTransitive\Uno.WinUI.Runtime.WebAssembly.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.webassembly\4.6.19\build\Uno.WinUI.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.webassembly\4.6.19\build\Uno.WinUI.WebAssembly.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)uno.winui.runtime.webassembly\4.6.19\buildTransitive\Uno.WinUI.Runtime.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.runtime.webassembly\4.6.19\buildTransitive\Uno.WinUI.Runtime.WebAssembly.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.webassembly\4.6.19\build\Uno.WinUI.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.webassembly\4.6.19\build\Uno.WinUI.WebAssembly.props')" />
+  </ImportGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-maccatalyst' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)uno.winui.runtime.webassembly\4.6.19\buildTransitive\Uno.WinUI.Runtime.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.runtime.webassembly\4.6.19\buildTransitive\Uno.WinUI.Runtime.WebAssembly.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.webassembly\4.6.19\build\Uno.WinUI.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.webassembly\4.6.19\build\Uno.WinUI.WebAssembly.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\GustavoFerreiraBarro\.nuget\packages\uno.winui\4.6.19</PkgUno_WinUI>
+    <PkgUno_WinUI_RemoteControl Condition=" '$(PkgUno_WinUI_RemoteControl)' == '' ">C:\Users\GustavoFerreiraBarro\.nuget\packages\uno.winui.remotecontrol\4.6.19</PkgUno_WinUI_RemoteControl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\GustavoFerreiraBarro\.nuget\packages\uno.winui\4.6.19</PkgUno_WinUI>
+    <PkgUno_WinUI_RemoteControl Condition=" '$(PkgUno_WinUI_RemoteControl)' == '' ">C:\Users\GustavoFerreiraBarro\.nuget\packages\uno.winui.remotecontrol\4.6.19</PkgUno_WinUI_RemoteControl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0-maccatalyst' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">C:\Users\GustavoFerreiraBarro\.nuget\packages\uno.winui\4.6.19</PkgUno_WinUI>
+    <PkgUno_WinUI_RemoteControl Condition=" '$(PkgUno_WinUI_RemoteControl)' == '' ">C:\Users\GustavoFerreiraBarro\.nuget\packages\uno.winui.remotecontrol\4.6.19</PkgUno_WinUI_RemoteControl>
+  </PropertyGroup>
+</Project>
