@@ -7,20 +7,16 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     
     mc:Ignorable="d" >
-    <StackPanel Orientation="Horizontal">
-        <StackPanel Orientation="Horizontal" Background="Pink" VerticalAlignment="Center" HorizontalAlignment="Center">
 
-
-        <TextBlock Grid.Row="2" Grid.RowSpan="2" Text="Priemiro Nome" Margin="20" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <TextBlock Text="Hello, world!1" Margin="20" FontSize="30" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <TextBlock Text="Hello, world!2" Margin="20" FontSize="30" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-
-        </StackPanel
-                    
-        <StackPanel Orientation="Horizontal">
-            <TextBlock Text="Hello, world!3" Margin="20" FontSize="30" Grid.Row="3 " Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-            <TextBlock Text="Hello, world!4" Margin="20" FontSize="30" Grid.Row="0 " Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-
-        </StackPanel>
-    </StackPanel>
+    <Page.Resources>
+        <Style x:Key="textblockstyle" TargetType="TextBlock">
+            <Style.Setters>
+                <Setter Property="Foreground" Value="Black" />
+            </Style.Setters>
+            
+        </Style>
+    </Page.Resources>
+            <Grid>
+        <TextBlock Text="Automatiza" FontSize="30" Margin="20" Style="{StaticResource textblockstyle}"/>
+            </Grid>
 </Page>
